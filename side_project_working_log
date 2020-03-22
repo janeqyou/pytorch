@@ -1,9 +1,28 @@
 # switch between user names 
-
+# switch to my personal account 
 git config --global user.name "Qian You"
 git config --global user.email "bloodysnow1043@gmail.com"
+git config --global credential.username "janeqyou"
+git config --global credential.user.email "bloodysnow1043@gmail.com"
+
+# simple ec2 instance set up 
+# need to request vCPU limit increase
+# case 6831276141: “I'm happy to inform you that our EC2 engineers reviewed 
+# your case and they have approved a limit increase request for 4 All P instances 
+# in the US West (Oregon) region”
+
+# Deep Learning AMI (Ubuntu 16.04) Version 27.0 (ami-0987fcabe779f2491)
+# p2.xlarge, vCPU=4, GPU=1, RAM=61GB
+
 
 # log into ec2
 # making sure you have the keypair
+# 34-221-78-49 is the public IPv4
 ssh -i ~/Downloads/janeyou-test.pem ubuntu@ec2-34-221-78-49.us-west-2.compute.amazonaws.com
+
+# portforwarding running the python notebook in the following folders 
+# 172-31-8-199 is the private
+ubuntu@ip-172-31-8-199:/home/ubuntu/tutorials/pytorch
+
+
 
