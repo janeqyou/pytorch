@@ -18,6 +18,7 @@ git config --global credential.user.email "bloodysnow1043@gmail.com"
 # log into ec2
 # making sure you have the keypair
 # 34-221-78-49 is the public IPv4
+chmod 440 ~/Downloads/janeyou-test.pem 
 ssh -i ~/Downloads/janeyou-test.pem ubuntu@ec2-34-221-78-49.us-west-2.compute.amazonaws.com
 
 # portforwarding running the python notebook in the following folders 
