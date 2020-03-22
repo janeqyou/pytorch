@@ -25,5 +25,30 @@ ssh -i ~/Downloads/janeyou-test.pem ubuntu@ec2-34-221-78-49.us-west-2.compute.am
 # 172-31-8-199 is the private
 ubuntu@ip-172-31-8-199:/home/ubuntu/tutorials/pytorch
 
+## copy latest Anaconda bash script to this ec2
+## scp -i ~/Downloads/janeyou-test.pem ~/Downloads/Anaconda3-2020.02-MacOSX-x86_64.sh ubuntu@ec2-34-221-78-49.us-west-2.compute.amazonaws.com:/home/ubuntu/misc
+
+## but actually anaconda, notebook jupyter, python 3 has pre installed
+## even pyspark 
+/home/ubuntu/anaconda3/bin//jupyter
+/home/ubuntu/anaconda3/bin//python
+/home/ubuntu/anaconda3/bin//pyspark
+
+# Option 1. start jupyter notebook on ec2 instance and access from local machine using 
+# port forwarding 
+jupyter notebook --no-browser --port=8888 &
+# keep track of lines such as "http://localhost:8888/?token=e50919c93cb94e50c20900c77c599402f11fab53e50043bf"
+# verify jupyter is running on port 8888
+>> lsof -i TCP:8888 | grep LISTEN
+jupyter-n 20312 ubuntu    9u  IPv4  43627      0t0  TCP localhost:8888 (LISTEN)
+ssh -i ~/Downloads/janeyou-test.pem -L 8000:localhost:8888 ubuntu@ec2-34-221-78-49.us-west-2.compute.amazonaws.com
+# Go to your local host and open localhost:8000
+# if password or token is asked, input the portion after "token="
+
+# Option 2. 
+
+
+
+
 
 
