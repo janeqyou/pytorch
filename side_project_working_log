@@ -1,3 +1,9 @@
+# switch between user names 
+
+git config --global user.name "Qian You"
+git config --global user.email "bloodysnow1043@gmail.com"
+
 # log into ec2
+# making sure you have the keypair
 ssh -i ~/Downloads/janeyou-test.pem ubuntu@ec2-34-221-78-49.us-west-2.compute.amazonaws.com
 
