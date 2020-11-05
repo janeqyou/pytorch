@@ -156,5 +156,18 @@ python2.7 gpumon.py &
 ## Go to cloud watch link to create a dashboard
 
 
+### ****** Set up SageMaker GroundTruth Labeling ******
+### use a free tier instance is enough ### 
+
+
+
+
+
+
+
+
+
+
+
 
 
