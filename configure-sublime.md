@@ -29,3 +29,7 @@
 }`
 * Go to ".md" file and add 
 $a^2 + b^2 = c^2$
+
+### Resources
+*http://plaintext-productivity.net/2-04-how-to-set-up-sublime-text-for-markdown-editing.html
+*https://stackoverflow.com/questions/27972177/how-to-enable-mathjax-rendering-in-sublime-text-markdown-preview
