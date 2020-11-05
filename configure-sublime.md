@@ -1,5 +1,7 @@
 ## Sublime Text 3 + Markdown + MathJax
 
+### Install the latest sublime text 3
+* The following instructions only apply to sublime text 3
 ### Install MarkdownPreview and MarkdownEditing 
 * Tool->Command Palette( command + shift + p )->Install Package Control
 * Command Palette -> "install". Hit return and type MarkdownPreview in the poped up input bar. If MarkdownPreview is succesfully installed, a file named "Package Control Message" will show in a new tab.
